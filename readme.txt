@@ -1,1 +1,1 @@
-This particular repositary is for having common file - sunil
+This particular repositary is for having common file
