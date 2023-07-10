@@ -1,0 +1,3 @@
+[all]
+52.77.217.140 ansible_user=ubuntu
+13.229.89.29 ansible_user=ubuntu
