@@ -1,0 +1,19 @@
+---
+- name: configuring tomcat
+  hosts: all
+  tasks: 
+    - name: Install tomcat9
+      apt: 
+        name: tomcat9
+        state: present
+        update_cache: yes
+    - name: change port of tomcat from 8080 to 9090
+      replace: 
+         regexp: 8080
+         replace:9090
+         path: /etc/tomcat9/server.xml
+     - name: restart tomcat9
+       service: 
+          name: tomcat9
+          state: present
+...          
